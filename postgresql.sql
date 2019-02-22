@@ -1,26 +1,29 @@
-create table images(tag varchar(100),
- id integer,
-  path varchar(100),
-   size integer);
+create table images(
+tag varchar(100),
+id integer,
+path varchar(100),
+size integer);
 
-create table homepagenews(imgurl varchar(200),
+create table homepagenews(
+imgurl varchar(200),
 linkurl varchar(200),
 title varchar(200),
 id serial);
 
-create table homepageartical (id serial,
+create table homepageartical (
+id serial,
 imgurl varchar(200),
 linkurl varchar(200),
-
+brif    varchar(200),
 date date);
 
 
 
 
-insert into homepagenew(imgurl,linkurl,title) values(
-    'http://129.204.193.192:4400/get?tag=&name=5.jpg',
-    'http://129.204.193.192:4400/get?tag=&name=5.jpg',
-    'http://129.204.193.192:4400/get?tag=&name=5.jpg'
+insert into homepagenews(imgurl,linkurl,title) values(
+    'http://129.204.193.192:4400/get?tag=&name=1.jpg',
+    'http://129.204.193.192:4400/get?tag=&name=1.jpg',
+    'http://129.204.193.192:4400/get?tag=&name=1.jpg'
 );
 
 insert into homepageartical(imgurl,linkurl,date)values(

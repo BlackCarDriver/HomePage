@@ -7,11 +7,11 @@ import(
 )
 
 func main(){
-	fmt.Println("It Program is use for provice image service,")
-	fmt.Println("default images path is: /home/blackcardriver/Documents/date/images/")
+	fmt.Println("It is a go web server , provice data to homepage html....")
 	mux := http.NewServeMux()
 	mux.HandleFunc("/Testnet",Testnet)
-	mux.HandleFunc("/images",GetImages)
+	// mux.HandleFunc("/images",GetImages)
+	mux.HandleFunc("/get",GetImages)
 	mux.HandleFunc("/gethomepageartical",GetHomePageArtical)
 	mux.HandleFunc("/gethomepagehotnews",GetHomePageHotnews)
 	server := &http.Server{
